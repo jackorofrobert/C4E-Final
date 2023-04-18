@@ -1,5 +1,5 @@
 if (localStorage.getItem("currentUser")) {
-    location.href = "/html/Singup.html";
+    location.href = "Singup.html";
   }
   
   let form = document.querySelector("form");
@@ -23,7 +23,7 @@ if (localStorage.getItem("currentUser")) {
       if (existingUser) {
         localStorage.setItem("currentUser", JSON.stringify(existingUser));
   
-        location.href = "/html/Catshop.html";
+        location.href = "Catshop.html";
       } else {
         alert("Email or password is incorrect");
       }
